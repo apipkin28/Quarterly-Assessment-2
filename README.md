@@ -14,4 +14,4 @@ In this file, I populated my tables with questions and answers.
 This file can pull all the table names out of the database. It can also pull all data from each question.
 
 # QuizBowlAPP file
-This file is the actual application that a user can play QuizBowl with. The user is given the option of 5 categories, in which they will choose. Once chosen, the user will be provided with questions regarding the topic. If the user answers correctly, it will be displayed in green. If the user answers incorrectly, it will be displayed in red and reveal the correct answer. The user will keep playing until all ten questions have been asked.
+This file is the actual application that a user can play QuizBowl with. The user is given the option of 5 categories, in which they will choose one. Once chosen, the user will be provided with questions regarding the topic. If the user answers correctly, the game will display that fact in green. If the user answers incorrectly, the game will display that fact in red and reveal the correct answer. The user will keep playing until all ten questions have been asked and answered.
