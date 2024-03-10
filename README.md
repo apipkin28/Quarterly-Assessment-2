@@ -12,3 +12,6 @@ In this file, I populated my tables with questions and answers.
 
 # readdata file
 This file can pull all the table names out of the database. It can also pull all data from each question.
+
+# QuizBowlAPP file
+This file is the actual application that a user can play QuizBowl with. The user is given the option of 5 categories, in which they will choose. Once chosen, the user will be provided with questions regarding the topic.
