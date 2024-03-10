@@ -1,8 +1,8 @@
 import sqlite3
 
-# inserting q and a into table
+# inserting questions and answers into table
 def insertQA():
-    # defining the q and a-- used GAI for questions
+    # defining the questions and answers -- used GAI for questions
     quizData = {
         "Business_Applications_Development": [
             ("What does the 'print()' function do in Python? A) Displays output B) Reads input C) Converts data types","A"),

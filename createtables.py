@@ -6,7 +6,7 @@ def tableCreation():
     conn = sqlite3.connect('QuizBowl.db')
     cr = conn.cursor()
 
-    # creating tables
+    # creating tables for db
     cr.execute(f'''CREATE TABLE IF NOT EXISTS Business_Applications_Development (
                                 id INTEGER PRIMARY KEY,
                                 question TEXT,
@@ -32,7 +32,7 @@ def tableCreation():
                                 question TEXT,
                                 answer TEXT)
                                 ''')
-    # commit changes and close the connection
+    # commit changes and close connection
     conn.commit()
     conn.close()
 
