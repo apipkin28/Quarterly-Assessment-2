@@ -40,6 +40,12 @@ def main():
         "4": "Risk_Management_And_Insurance",
         "5": "Calculus_II"
     }
+    
+    if userCateg in categories:
+        # call quizcateg function -- have to call or the questions do not show
+        quizCateg(categories[userCateg])
+    else:
+        print("This is not an option. Please respond with a valid option, 1-5.")
 
 # make sure script running as main program
 if __name__ == "__main__":
