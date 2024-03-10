@@ -65,3 +65,19 @@ def insertQA():
             ("What is Taylor's Theorem? A) Describes properties of functions B) Describes properties of limits C) Theorem for approximating functions","C")
         ]
     }
+
+    # connect to db
+    conn = sqlite3.connect('QuizBowl.db')
+    cr = conn.cursor()
+
+    # iterate through quiz data
+    for table, pairsQA in quizData.items():
+        for question, answer in pairsQA:
+            cr.execute(f"INSERT INTO {table} (question, answer) VALUES (?, ?)", (question, answer))
+
+    # commit changes and close
+    conn.commit()
+    conn.close()
+
+# call function to insert
+insertQA()
