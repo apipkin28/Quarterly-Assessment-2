@@ -9,6 +9,9 @@ def quizCateg(category):
     cursor.execute(f"SELECT * FROM {category}")
     values = cursor.fetchall()
 
+    # keep score
+    score = 0
+
     # iterate each question
     for value in values:
         question = value[1]
@@ -18,9 +21,14 @@ def quizCateg(category):
         if userAns.strip().lower() == correctAns.strip().lower():
             # green
             print("\033[92mCorrect!\033[0m")
+            # add point since correct answer
+            score += 1
         else:
             # red
             print("\033[91mIncorrect. The correct answer is:", correctAns, "\033[0m")
+
+    # tell user their final score
+    print("Your final score is", score, "out of", len(values))
 
 # defining main function of program
 def main():
