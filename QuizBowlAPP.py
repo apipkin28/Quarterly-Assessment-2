@@ -16,9 +16,11 @@ def quizCateg(category):
         print(question)
         userAns = input("Your answer: ")
         if userAns.strip().lower() == correctAns.strip().lower():
-            print("Correct!")
+            # green
+            print("\033[92mCorrect!\033[0m")
         else:
-            print("Incorrect. The correct answer is:", correctAns)
+            # red
+            print("\033[91mIncorrect. The correct answer is:", correctAns, "\033[0m")
 
 # defining main function of program
 def main():
