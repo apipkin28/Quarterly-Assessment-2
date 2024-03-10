@@ -31,3 +31,18 @@ def fetch_all_data(table_name):
     conn.close()
 
     return data
+
+# Main function to demonstrate fetching table names and data
+def main():
+    tableNames = getTableNames()
+    print("Table Names:")
+    for table_name in tableNames:
+        print(table_name)
+        print("Data:")
+        data = fetch_all_data(table_name)
+        for row in data:
+            print(row)
+        print()
+
+if __name__ == "__main__":
+    main()
